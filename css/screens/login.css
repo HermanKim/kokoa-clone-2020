@@ -14,7 +14,6 @@
     opacity: 0.5;
 }
 
-
 .login-form{
     display:flex;
     flex-direction: column;
@@ -54,6 +53,10 @@
 
 .login-form__password:focus{
     border-color:var(--yellow);
+}
+
+.login-form__username::placeholder{
+    color:rgba(0.0.0.0.9);
 }
 
 .login-form__btn{
