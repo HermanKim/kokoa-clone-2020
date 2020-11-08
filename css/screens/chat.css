@@ -1,0 +1,77 @@
+.reply {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+    
+  .reply .reply__column:first-child {
+    width: 10%;
+  }
+
+  .reply .reply__column:last-child {
+    width: 90%;
+    align-items: center;
+
+
+  }
+  
+  .reply input{
+      height:40px;
+      width:100%;
+      border:1px solid gray;
+      border-radius: 20px;
+      padding:0px 20px;
+      box-sizing: border-box;
+  }
+
+  .reply i {
+    opacity: 0.5;
+  }
+  
+  .reply__column{
+      position:relative;
+      box-sizing: border-box;
+  }
+
+
+
+  .reply__column:last-child > i,
+  .reply__column:last-child button {
+      position:absolute;
+      right:5px;
+      top:5px;
+  }
+
+  .reply__column:last-child > i{
+    right:40px;
+    top:12px;
+  }
+
+  .reply__column:last-child button {
+      background-color:var(--yellow);
+      border:none;
+      width:30px;
+      height:30px;
+      border-radius:50%;
+  }
+
+  .reply__column:last-child button:focus,
+  .reply__column:last-child button:active {
+      outline:none;
+  }
+
+  .reply__column button i {
+      opacity:1;
+  }
+
+  .reply:focus-within .reply__column:first-child{
+    display:none;
+  }
+  /*focus-within 이라는 프로퍼티는 해당 element 내에 있는 어떤 elememt가 focus가 되어 있을때를 의미 */

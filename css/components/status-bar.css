@@ -4,10 +4,12 @@
     width: 100%;
     display:flex;
     justify-content: center;
-    padding: 5px 3px
+    padding: 5px 3px;
+    background-color:white;
+    z-index:2; /*z-index는 기본적으로 0, 숫자가 클수록 Layer 앞에 위치하게 됨*/
 }
 .status-bar__column{
-    width:33%
+    width:33% /*정 가운데 위치하기 위한 Hack. 일단 칼럼 크기를 3개로 쪼갰으면 각각 width를 33%로 설정*/
 }
 
 .status-bar__column:first-child span{
@@ -18,11 +20,12 @@
     display:flex;
     justify-content: center;
 }
+/*가운데 칼럼을 flex로 설정하고, justify-content를 center로 설정*/
 
 .status-bar__column:nth-child(3){
     display: flex;
     justify-content: flex-end;
-    
+    /*마지막 칼럼을 felx로 설정하고, justify-content를 flex-end로 설정*/
 }
 
 .status-bar__column .fa-battery-three-quarters{
